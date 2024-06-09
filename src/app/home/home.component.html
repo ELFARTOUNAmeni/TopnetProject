@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre service client</title>
+    
+</head>
+
+<body >
+    
+    <div style="width: 100%;">
+       
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Particulier</a></li>
+                <li><a href="#" class="active">Professionnel</a></li>
+                <li><a href="#" class="active">Entreprise</a></li>
+                <li><a href="#" style=" margin-left: 760px;">Boutique en ligne</a></li>
+                <li><a href="#">Webmail</a></li>
+            </ul>
+        </nav>
+
+        <div class="card" style="background-color: #fffbf4;">
+            <div class="card-body text-center">
+                <img style="margin-top: -60px;" src="assets/images/topnet.png" alt="Topnet Logo" class="logo">
+                <h5 style="margin-top: -90px; color:#08164f;">Votre service client à portée de main</h5>
+            </div>
+        </div>
+
+        <main>
+            <div class="login-form">
+                <h2>Mon espace</h2>
+                <p class="text-center">Veuillez saisir votre login et mot de passe pour accéder à votre espace</p>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" style="border-radius: 50px;" class="form-control" id="client-code"
+                            name="client-code" required placeholder="Code Client/Email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" style="border-radius: 50px;" class="form-control" id="password"
+                            name="password" required placeholder="Mot de passe">
+                    </div>
+                    <button class="button" (click)="navigateToSidebar()">Connect
+                        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                            <path clip-rule="evenodd"
+                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <br>
+                    <div class="d-flex justify-content-between">
+                        <a style="color: #545454; cursor: pointer;">Récupérez vos paramètres</a>
+                        <a style="color: #545454; cursor: pointer;">Mot de passe oublié?</a>
+                    </div>
+                </form>
+            </div>
+            <bR>
+            <h3 style="text-align: center;">Profitez de tous nos services</h3>
+            <div class="services">
+                <ul>
+                    <li><a ><i class="fas fa-headset icon"></i> Réclamation</a></li>
+                    <li><a ><i class="fas fa-envelope icon"></i> Gestion des emails</a></li>
+                    <li><a><i class="fas fa-exchange-alt icon"></i> Transfert de ligne</a></li>
+                    <li><a><i class="fas fa-sync-alt icon"></i> Migration d'offre</a></li>
+                    <li><a><i class="fas fa-file-invoice icon"></i> Factures</a></li>
+                    <li><a><i class="fas fa-comments icon"></i> Suggestions</a></li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

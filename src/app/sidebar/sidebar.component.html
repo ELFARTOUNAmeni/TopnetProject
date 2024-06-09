@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z2Go+kgq0SKrO+P1z4x4z+U7k3zV+kjz6ZeJbW" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-eN7r8Of9ryhQm/DLU9+eHZrmK3zS+3pNnp1h4fgdczvY9APenAxWcQKPt3U8dK6j" crossorigin="anonymous">
+  
+</head>
+
+<body>
+  <div class="sidebar">
+    <div>
+      <img style="cursor: pointer;" src="assets/images/topnet02.png" (click)="navigateTohome()" alt="Topnet Logo" class="logo img-fluid mb-3">
+    </div>
+    <div class="sidebar-section">
+      <h3>AUTHENTICATION AND AUTHORIZATION</h3>
+      <ul>
+        <li><a href="#" class="nav-link"><i class="fas fa-users icon"></i> Groups</a></li>
+        <li><a href="#" class="nav-link"><i class="fas fa-user icon"></i> Users</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-section">
+      <h3>FACTURES</h3>
+      <ul>
+        <li><a routerLink="/welcome/add-facture" class="nav-link"><i class="fas fa-file-invoice-dollar icon"></i> Factures</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-section">
+      <h3>GESTION_EMAIL</h3>
+      <ul>
+        <li><a routerLink="/welcome/Gestion-emails" class="nav-link"><i class="fas fa-envelope icon"></i> Gestion emails</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-section">
+      <h3>MIGRATION_D_OFFRE</h3>
+      <ul>
+        <li><a routerLink="/welcome/MIGRATION-D-OFFRE" class="nav-link"><i class="fas fa-sync-alt icon"></i> Migration d'offres</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-section">
+      <h3>RECLAMATIONS</h3>
+      <ul>
+        <li><a routerLink="/welcome/Reclamation" class="nav-link"><i class="fas fa-comment-dots icon"></i> Réclamations</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-section">
+      <h3>SUGGESTIONS</h3>
+      <ul>
+        <li><a routerLink="/welcome/SUGGESTIONS" class="nav-link"><i class="fas fa-lightbulb icon"></i> Suggestions</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-section">
+      <h3>TRANSFERT_DE_lIGNE</h3>
+      <ul>
+        <li><a routerLink="/welcome/TRANSFERT_DE_LIGNE" class="nav-link"><i class="fas fa-exchange-alt icon"></i> Transfert de ligne</a></li>
+      </ul>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z2Go+kgq0SKrO+P1z4x4z+U7k3zV+kjz6ZeJbW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eNL8HjDb7nBwT7b/4+mU4KhZr1x4le4hqDh9r6uPZm3GoJgtXOM5I1JG0sdZZT4M" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0ey5jXl0T2hH6rwLzA7uoAig6POF7I7qEl3I9lWq8Kd6LFl0Xg7nqLr4" crossorigin="anonymous"></script>
+</body>
+
+</html>

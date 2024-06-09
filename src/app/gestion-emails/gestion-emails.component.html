@@ -1,0 +1,76 @@
+<!-- add-facture.component.html -->
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card">
+        <div class="card-body">
+    
+    <h2 class="mb-4">Add gestion email </h2>
+    <form [formGroup]="emailsForm" (ngSubmit)="onSubmit()" class="needs-validation" novalidate>
+       
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="Destinataire" class="form-label">Destinataire:</label>
+            </div>
+            <div class="col-md-9">
+                <input id="destinataire" class="form-control" formControlName="destinataire" required>
+            </div>
+        </div>
+        
+
+            
+            
+       
+        <hr>
+       
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="Sujet" class="form-label">Sujet:</label>
+            </div>
+            <div class="col-md-9">
+                <input id="Sujet" class="form-control" formControlName="Sujet" required>
+                
+            </div>
+        </div>
+        
+            
+       
+        <hr>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="Messages" class="form-label">Messages:</label>
+            </div>
+            <div class="col-md-9">
+                <textarea id="Messages" class="form-control" formControlName="Messages" required></textarea>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="Statut" class="form-label">Statut:</label>
+            </div>
+            <div class="col-md-9">
+                <select class="form-select" data-mdb-select-init>
+                    <option selected>En attente</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+            
+        </div>
+        
+        <hr>
+        <div class="d-flex justify-content-center">
+            <div class="card">
+                <div class="card-body">
+                    <button type="submit" style="background-color: #205067;border-color: #205067;" class="btn btn-primary me-2">Save</button>
+                    <button type="button" style="background-color: #417690; border-color: #417690;" class="btn btn-success me-2">Save and add another</button>
+                    <button type="button" style="background-color: #417690; border-color: #417690;" class="btn btn-success me-2">Save and continue editing</button>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+</div>
+</div>
+</div>
